@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+	background-image: url("../images/grain.jpg");
+}
+
+.section {
+	padding-top: 60px;
+	padding-bottom: 10px !important;
+}
+
+.home-page .section {
+	padding-top: 130px !important;
+}
+
+.log-img {
+	max-height: 150px;
+	margin-top: 50px;
+}
+
+.contact-icon {
+	font-size: 50px;
+	margin: 0 15px 0 15px;
+}
+
+/* to shift content because of navbar */
+
+div.navigation {
+  z-index: 99;
+}
+
+.top-menu {
+	color: white !important;
+}
+
+.top-menu-item {
+	color: white !important;
+}
+
+.--not-top {
+	border-bottom: 0.5px rgba(0, 0, 0, 0.05) solid;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+@media (min-width: 576px) { 
+	.img-about {
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	.img-about {
+		width: 50%;
+	}
+}
+
+.content .post-image {
+	width: 100%;
+}
+
+/* change colors */
+
+.btn-transparent,
+.form-control:focus,
+::selection, 
+a.text-dark:hover, 
+.text-primary, 
+.instagram-post ul a:hover,
+.tag-list li a:hover,
+a:hover {
+  color: #f6980f !important;
+}
+
+a {
+	color: #585757 !important;
+}
+
+::selection {
+	color: white !important;
+}
+
+.btn-primary {
+	background: #f6980f !important;
+}
+
+/* change fonts */
+p, .paragraph, h1, h2, h3, h4, h5, h6, .btn, body {
+	font-family: "Raleway", sans-serif !important;
+}
+
+p, .paragraph, li {
+	font-size: 20px !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 500 !important;
+	text-align: center;
+	margin-top: 15px;
+}
+
+.item-title {
+	font-size: 20px !important;
+	margin-top: 0px !important;
+}
+
+h1 {
+	font-size: 30px !important;
+}
+
+h2 {
+	font-size: 28px !important;
+}
+
+h3 {
+	font-size: 26px !important;
+}
+
+h4 {
+	font-size: 24px !important;
+}
+
+h5 {
+	font-size: 22px !important;
+}
+
+h6 {
+	font-size: 20px !important;
+}
+
+/* for persons contributing in the making in post */
+.persons {
+	margin-top: 0px !important;
+}
+
+.hero-area {
+	background-size: cover;
+    height: 100vh;
+    position: relative;
+    justify-content: center;
+    background-image: url("../images/hero_image.jpg");
+    background-position: left center;
+}
+
+.subtitle-box {
+	margin-top: 40px;
+	background-color: #f6980f;
+	border-radius: 25px;
+	padding: 5px 20px 5px 20px;
+	font-size: 20px;
+	color: white;
+	font-weight: 300;
+	display: inline-block;
+	text-align:center
+}
+
+.hero-title {
+	margin-top: 40px;
+	max-width: 450px;
+}
