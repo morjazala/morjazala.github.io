@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Upcycled shirts on Morja</title>
-    <link>https://examplesite.org/categories/upcycled-shirts/</link>
+    <link>https://morjazala.github.io/categories/upcycled-shirts/</link>
     <description>Recent content in Upcycled shirts on Morja</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 14 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://examplesite.org/categories/upcycled-shirts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://morjazala.github.io/categories/upcycled-shirts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>MAJA</title>
-      <link>https://examplesite.org/2020-05-14-maja-1/</link>
+      <link>https://morjazala.github.io/2020-05-14-maja-1/</link>
       <pubDate>Thu, 14 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.org/2020-05-14-maja-1/</guid>
+      <guid>https://morjazala.github.io/2020-05-14-maja-1/</guid>
       <description>Second hand shirts getting a new chance, a new life for a better and greener tomorrow.</description>
     </item>
     

@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Upcycled shirt on Morja</title>
-    <link>https://examplesite.org/categories/upcycled-shirt/</link>
+    <link>https://morjazala.github.io/categories/upcycled-shirt/</link>
     <description>Recent content in Upcycled shirt on Morja</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 25 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://examplesite.org/categories/upcycled-shirt/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://morjazala.github.io/categories/upcycled-shirt/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ZLATICA</title>
-      <link>https://examplesite.org/2020-05-25-zlatica/</link>
+      <link>https://morjazala.github.io/2020-05-25-zlatica/</link>
       <pubDate>Mon, 25 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.org/2020-05-25-zlatica/</guid>
+      <guid>https://morjazala.github.io/2020-05-25-zlatica/</guid>
       <description>Meadow spreading down the valley. This is where I first learned to skii.</description>
     </item>
     
     <item>
       <title>SREBRNA</title>
-      <link>https://examplesite.org/2020-05-22-srebrna/</link>
+      <link>https://morjazala.github.io/2020-05-22-srebrna/</link>
       <pubDate>Fri, 22 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.org/2020-05-22-srebrna/</guid>
+      <guid>https://morjazala.github.io/2020-05-22-srebrna/</guid>
       <description>Everytime my mom goes for a walk, she says she has to combine comfort with convenience.</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>upcycled sweater on Morja</title>
-    <link>https://examplesite.org/categories/upcycled-sweater/</link>
+    <link>https://morjazala.github.io/categories/upcycled-sweater/</link>
     <description>Recent content in upcycled sweater on Morja</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 20 May 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://examplesite.org/categories/upcycled-sweater/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://morjazala.github.io/categories/upcycled-sweater/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>ŠPELA</title>
-      <link>https://examplesite.org/2020-05-20-spela/</link>
+      <link>https://morjazala.github.io/2020-05-20-spela/</link>
       <pubDate>Wed, 20 May 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://examplesite.org/2020-05-20-spela/</guid>
+      <guid>https://morjazala.github.io/2020-05-20-spela/</guid>
       <description>Very often, when coming amid unknown people and learning someone is from the same area where I live, I feel connected to them by this fact, and I trust them slightly more than the others.</description>
     </item>
     
