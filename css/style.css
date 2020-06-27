@@ -47,11 +47,10 @@ div.navigation {
     background-color: white;
 }
 
-@media (min-width: 576px) { 
-	.img-about {
-		width: 100%;
-	}
+.img-about {
+	max-width: 100%;
 }
+
 
 @media (min-width: 768px) {
 	.img-about {
@@ -161,4 +160,5 @@ h6 {
 .hero-title {
 	margin-top: 40px;
 	max-width: 450px;
+	max-height: 40vh;
 }
