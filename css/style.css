@@ -1,11 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
 
-html {
-  scroll-behavior: smooth;
+:root {
+	/* hero spacing */
+  --margin-above-logo: 20vh;
+  --logo-height: 20vh;
+  --margin-before-title: 10vh;
+  --title-height: 15vh;
+  --margin-before-arrow: 5vh;
+  --arrow-height: 20vh;
 }
 
-body {
-	background-image: url("../images/grain.jpg");
+html {
+  scroll-behavior: smooth;
 }
 
 .section {
@@ -14,23 +20,26 @@ body {
 }
 
 .home-page .section {
-	padding-top: 130px !important;
+	padding-top: 80px !important;
 }
 
 .log-img {
-	max-height: 150px;
-	margin-top: 50px;
+	margin-top: var(--margin-above-logo);
+	max-height: var(--logo-height);
 }
 
 .contact-icon {
-	font-size: 50px;
-	margin: 0 15px 0 15px;
+	font-size: 25px;
+	margin: 0 5px 0 5px;
 }
 
 /* to shift content because of navbar */
 
 div.navigation {
   z-index: 99;
+}
+a.nav-link {
+	font-size: 15px;
 }
 
 .top-menu {
@@ -47,15 +56,30 @@ div.navigation {
     background-color: white;
 }
 
+@media (min-width: 767.98px) {
+	#about {
+		background-image: url(../images/raztrganina-siroka.jpg);
+		background-size: auto 100%;
+		background-position: center;
+	}
+}
+@media (max-width: 767.98px) {
+	#about {
+		background-image: url(../images/raztrganina-visoka.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+}
 .img-about {
 	max-width: 100%;
 }
-
-
 @media (min-width: 768px) {
 	.img-about {
 		width: 50%;
 	}
+}
+.about-content>p {
+	color: black;
 }
 
 @media (max-width: 768px) {
@@ -100,13 +124,13 @@ p, .paragraph, h1, h2, h3, h4, h5, h6, .btn, body {
 }
 
 p, .paragraph, li {
-	font-size: 20px !important;
+	font-size: 20px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 500 !important;
+	font-weight: 500;
 	text-align: center;
-	margin-top: 15px;
+	margin-top: 15px !important;
 }
 
 .item-title {
@@ -119,7 +143,7 @@ h1 {
 }
 
 h2 {
-	font-size: 28px !important;
+	font-size: 15px !important;
 }
 
 h3 {
@@ -145,11 +169,20 @@ h6 {
 
 .hero-area {
 	background-size: cover;
-    height: 100vh;
-    position: relative;
-    justify-content: center;
-    background-image: url("../images/hero_image.jpg");
-    background-position: left center;
+  height: 125vh;
+  position: relative;
+  justify-content: center;
+  background-image: url("../images/hero-image.jpg");
+  background-position: left bottom;
+}
+
+.hero-area-small {
+	background-size: cover;
+  height: 50vh;
+  position: relative;
+  justify-content: center;
+  background-image: url("../images/hero-small.jpg");
+  background-position: left bottom;
 }
 
 .subtitle-box {
@@ -165,11 +198,69 @@ h6 {
 }
 
 .hero-title {
-	margin-top: 40px;
-	max-width: 450px;
-	max-height: 40vh;
+	margin-top: var(--margin-before-title);
+	max-width: 100%;
+	max-height: var(--title-height);
+}
+
+.hero-arow {
+	margin-top: var(--margin-before-arrow);
+	max-width: 100%;
+	max-height: var(--arrow-height);
 }
 
 .content>div {
 	margin-bottom: 0 !important;
+}
+
+.card-img-top {
+    width: 100%;
+    object-fit: cover;
+}
+.index-titles {
+	color: inherit;
+}
+
+/* card images - zoom instead of strech */
+.card-image {
+    object-fit: cover;
+}
+
+/* card effect source: https://www.ordinarycoders.com/blog/article/codepen-bootstrap-card-hovers */
+/* next two are for zoom in on card hover */
+a.custom-card img {
+  -webkit-transition:all 1s ease; 
+  -moz-transition:all 1s ease; 
+  -o-transition:all 1s ease;
+  -ms-transition:all 1s ease; 
+}
+a.custom-card:hover img {
+  opacity: 0.7;
+  -webkit-transform:scale(1.10);
+  -moz-transform:scale(1.10);
+  -ms-transform:scale(1.10);
+  -o-transform:scale(1.10);
+  transform:scale(1.10);
+}
+a.custom-card:hover {
+	color: inherit !important;
+}
+
+.ow-hidden {
+	overflow: hidden;
+}
+
+div.raztrgenina-ozka {
+	height: 600px;
+	background-size: auto 100%;
+	background-image: url("../images/ozka-raztganina.jpg");
+	background-position: center center;
+}
+
+.text-over-image {
+	font-size: 35px; 
+	font-weight: 800; 
+	color: white;
+	padding: 0;
+	margin: 0;
 }
