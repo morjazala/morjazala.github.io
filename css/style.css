@@ -257,10 +257,21 @@ a.custom-card:hover {
 }
 
 div.raztrgenina-ozka {
-	height: 600px;
 	background-size: auto 100%;
 	background-image: url("../images/ozka-raztganina.jpg");
 	background-position: center center;
+}
+@media (min-width: 767.98px) {
+	.verse1 {
+		margin-top: 100px !important; 
+		margin-bottom: 120px !important;
+	}
+}
+@media (max-width: 767.98px) {
+	.verse1 {
+		margin-top: 100px !important; 
+		margin-bottom: 90px !important;
+	}
 }
 
 .text-over-image {
