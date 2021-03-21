@@ -112,8 +112,14 @@ a:hover {
   color: #f6980f !important;
 }
 
+article a {
+	color: #f6980f !important;
+}
 a {
 	color: #585757 !important;
+}
+.orange {
+	color: #f6980f !important;
 }
 
 ::selection {
