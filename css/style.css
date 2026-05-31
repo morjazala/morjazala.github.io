@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
 
 :root {
 	/* hero spacing */
@@ -8,6 +8,13 @@
   --title-height: 15vh;
   --margin-before-arrow: 5vh;
   --arrow-height: 20vh;
+  --morja-orange: rgb(246, 152, 15);
+  --morja-orange-rgb: 246, 152, 15;
+  --morja-orange-dark: rgb(205, 103, 55);
+  --morja-orange-dark-rgb: 205, 103, 55;
+  --morja-travnata-green: #747138;
+  --morja-travnata-green-rgb: 116, 113, 56;
+  --morja-purple-rgb: 182, 135, 183
 }
 
 html {
@@ -38,9 +45,6 @@ html {
 div.navigation {
   z-index: 99;
 }
-a.nav-link {
-	font-size: 15px;
-}
 
 .top-menu {
 	color: white !important;
@@ -55,12 +59,17 @@ a.nav-link {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     background-color: white;
 }
-
-#about {
-	background-image: url(../images/about-background.jpg);
-	background-size: auto 100%;
-	background-position: center;
+.--not-top .nav-link {
+	color: black !important;
 }
+
+.nav-link {
+	color: white !important;
+}
+.nav-link:hover {
+	color: rgba(var(--morja-orange-dark-rgb)) !important;
+}
+
 @media (max-width: 767.98px) {
 	.about-image {
 		margin-bottom: 70px;
@@ -109,25 +118,28 @@ a.text-dark:hover,
 .instagram-post ul a:hover,
 .tag-list li a:hover,
 a:hover {
-  color: #f6980f !important;
+  color: --morja-orange !important;
 }
 
 article a {
-	color: #f6980f !important;
+	color: --morja-orange !important;
 }
 a {
 	color: #585757 !important;
 }
 .orange {
-	color: #f6980f !important;
+	color: --morja-orange !important;
 }
 
 ::selection {
 	color: white !important;
 }
+.opacity-hover:hover {
+	opacity: 0.7;
+}
 
 .btn-primary {
-	background: #f6980f !important;
+	background: --morja-orange !important;
 }
 
 /* change fonts */
@@ -155,7 +167,7 @@ h1 {
 }
 
 h2 {
-	font-size: 15px !important;
+	font-size: 30px !important;
 }
 
 h3 {
@@ -173,6 +185,9 @@ h5 {
 h6 {
 	font-size: 20px !important;
 }
+.bold {
+	font-weight: bold;
+}
 
 /* for persons contributing in the making in post */
 .persons {
@@ -180,21 +195,15 @@ h6 {
 }
 
 .hero-area {
-	background-size: cover;
-  height: 125vh;
+  background-size: cover;
   position: relative;
   justify-content: center;
-  background-image: url("../images/hero-image.jpg");
-  background-position: left bottom;
+  background-position: center bottom;
 }
-
-.hero-area-small {
-	background-size: cover;
-  height: 50vh;
-  position: relative;
-  justify-content: center;
-  background-image: url("../images/hero-small.jpg");
-  background-position: left bottom;
+@media (max-width: 768px) {
+  .hero-area {
+		background-position: 35% bottom; /* shift center a bit to the left */
+  }
 }
 
 .subtitle-box {
@@ -240,13 +249,15 @@ h6 {
 
 /* card effect source: https://www.ordinarycoders.com/blog/article/codepen-bootstrap-card-hovers */
 /* next two are for zoom in on card hover */
-a.custom-card img {
+a.custom-card img,
+.link-card img {
   -webkit-transition:all 1s ease; 
   -moz-transition:all 1s ease; 
   -o-transition:all 1s ease;
   -ms-transition:all 1s ease; 
 }
-a.custom-card:hover img {
+a.custom-card:hover img,
+.link-card:hover img {
   opacity: 0.7;
   -webkit-transform:scale(1.10);
   -moz-transform:scale(1.10);
@@ -290,4 +301,68 @@ div.raztrgenina-ozka {
 
 a.page-link {
 	font-family: "Raleway", sans-serif !important;
+}
+
+.rounded-text-box {
+    font-size: 30px; 
+    font-weight: 700;
+    color: white !important; 
+    background-color: rgba(var(--morja-orange-dark-rgb), 0.7); 
+
+    display: inline;           /* Background only exists where text exists */
+    padding: 0.2em 0.5em;      /* Use 'em' so it scales with your 30px font */
+    border-radius: 999px;      /* High number ensures a perfect pill shape */
+}
+.light-rounded-text-box {
+    font-size: 30px; 
+    font-weight: 700;
+    color: white !important; 
+    background-color: rgba(var(--morja-orange-dark-rgb)); 
+
+    display: inline;           /* Background only exists where text exists */
+    padding: 0.2em 0.5em;      /* Use 'em' so it scales with your 30px font */
+    border-radius: 5px;      /* High number ensures a perfect pill shape */
+}
+
+.area-increase-hover {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    will-change: transform; /* Stops layout jitter */
+}
+.area-increase-hover:hover {
+    transform: scale(1.05);
+}
+
+/*shop cards */
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    /* Background is now set via inline style */
+	font-size: 30px;
+    font-weight: bold;
+}
+
+.image-overlay:hover {
+    background: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
+/* This makes the link cover the entire parent container */
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1; /* Sits above the image */
+    content: "";
 }

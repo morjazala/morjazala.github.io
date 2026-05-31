@@ -1,0 +1,97 @@
+/* offer.html */
+
+.tape-item {
+    /* Path to your tape image */
+    background-image: url('/images/tape-bg.png'); 
+    background-size: contain;      /* Ensures the whole tape is visible */
+    background-repeat: no-repeat;  /* Prevents tiling inside the box */
+    background-position: center;   /* Keeps the text in the middle of the tape */
+    
+    /* Adjust these to match your image proportions */
+    padding: 10px 10px;           
+    min-height: 60px;              /* Ensures short words don't make the tape too tiny */
+    min-width: 200px;
+    display: inline-block;
+}
+
+.cikcak {
+    background-image: url('/images/cikcak.webp'); 
+    background-size: cover;
+    background-repeat: no-repeat;  /* Prevents tiling inside the box */
+    background-position: center;   /* Keeps the text in the middle of the tape */
+}
+
+.custom-pill {
+    padding: 10px 30px;
+    font-weight: 800; /* Extra bold */
+    color: white !important;
+    text-transform: lowercase; /* Matches your screenshot style */
+    border: none;
+    transition: transform 0.2s ease;
+}
+
+.custom-pill:hover {
+    transform: scale(1.05); /* Slight pop on hover */
+    color: white;
+}
+
+/* Specific Colors from your image */
+.btn-lavender {
+    background-color: #b19cd9; /* Adjust to match your exact purple */
+}
+
+.btn-olive {
+    background-color: #6b7036; /* Adjust to match your exact green */
+}
+
+/* About */
+  /* Default Desktop Style (Large screens) */
+  .about-background {
+    background-image: url("/images/background-about-lg.webp");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 1000px;
+    width: 100%;
+  }
+  .about-tile {
+    max-width: 150px;
+  }
+
+  /* Medium Screens and Smaller (Tablets/Phones < 992px) */
+  @media (max-width: 991.98px) {
+    .about-background {
+      background-image: url("/images/background-about-sm.webp");
+      background-size: cover;
+      background-position: top;
+      min-height: 300px;
+    }
+    .about-padding-top {
+      padding-top: 100px;
+    }
+    .about-tile {
+      max-width: 200px;
+      margin-right: 100px;
+    }
+  }
+
+  /* Running text */
+  .marquee-container {
+    overflow: hidden; /* Hides the text when it goes off-screen */
+    white-space: nowrap; /* Prevents text from wrapping onto the next line */
+    width: 100%;
+  }
+  
+  .marquee-content {
+    display: inline-block;
+    animation: scroll 20s linear infinite; /* Adjust speed here */
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(-50%, 0);
+    }
+  }
