@@ -366,3 +366,15 @@ a.page-link {
     z-index: 1; /* Sits above the image */
     content: "";
 }
+
+  /* footer */
+  .footer {
+    background-image: url('/images/footer-raztrganina.webp');
+    /* Image to fill the height */
+    background-size: auto 100%; 
+    /* Allow the image to repeat horizontally */
+    background-repeat: repeat-x;
+    background-position: center;
+    /* Ensure all text on the background */
+    padding-top: 150px;
+  }
