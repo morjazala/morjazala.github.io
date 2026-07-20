@@ -14,7 +14,8 @@
   --morja-orange-dark-rgb: 205, 103, 55;
   --morja-travnata-green: #747138;
   --morja-travnata-green-rgb: 116, 113, 56;
-  --morja-purple-rgb: 182, 135, 183
+  --morja-purple-rgb: 182, 135, 183;
+  --morja-purple: rgb(182, 135, 183);
 }
 
 html {
@@ -138,8 +139,30 @@ a {
 	opacity: 0.7;
 }
 
+.btn {
+	border: 0 !important;
+}
+.btn:hover {
+	border: 0 !important;
+	transform: scale(1.05);
+}
 .btn-primary {
-	background: --morja-orange !important;
+	background: var(--morja-orange-dark) !important;
+}
+.btn-primary.active, .btn-secondprimaryary:active, .btn-primary:focus {
+	box-shadow: 0 0 0 .25rem rgba(var(--morja-orange-dark-rgb), 0.5) !important;
+}
+.btn-secondary {
+	background: var(--morja-travnata-green) !important;
+}
+.btn-secondary.active, .btn-secondary:active, .btn-secondary:focus {
+	box-shadow: 0 0 0 .25rem rgba(var(--morja-travnata-green-rgb), 0.5) !important;
+}
+.btn-success {
+	background: var(--morja-purple) !important;
+}
+.btn-success.active, .btn-success:active, .btn-success:focus {
+	box-shadow: 0 0 0 .25rem rgba(var(--morja-purple-rgb), 0.5) !important;
 }
 
 /* change fonts */

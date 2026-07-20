@@ -98,3 +98,117 @@
       transform: translate(-33.33%, 0);
     }
   }
+
+  /* form style */
+  .contanct-textarea {
+    border: 4px solid var(--morja-orange-dark); 
+    border-radius: 2px;
+    /* Ensures the padding doesn't push the border outside the defined width */
+    box-sizing: border-box;
+    /* Adds some breathing room inside the box */
+    padding: 10px;
+    /* Removes default browser outline when clicked */
+    outline: none;
+    width: 100%;
+    color: var(--morja-orange-dark);
+    font-size: 20px;
+    min-height: 183px;
+  }
+  .contanct-textarea::placeholder {
+    color: var(--morja-orange-dark);
+  }
+
+  .form-input {
+    border: 2px solid var(--morja-orange-dark); 
+    background-color: var(--morja-orange-dark);
+    border-radius: 4px;
+    /* Spacing and layout */
+    padding: 10px 15px;
+    width: 100%;   
+    height: 45px;
+    
+    /* Text styling */
+    font-size: 16px;
+    color: white !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    
+    /* Important for consistent box sizing */
+    box-sizing: border-box;
+  }
+  .form-input::placeholder {
+    color: white;
+  }
+  .submit-button {
+    width: 100%; 
+    height: 45px; 
+    color: white; 
+    font-size: 20px; 
+    font-weight: 20px;
+    font-weight: bold;
+  }
+  .option-btn {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+    height: 45px; 
+  }
+
+  /* form style */
+  .contanct-textarea {
+    border: 4px solid var(--morja-orange-dark); 
+    border-radius: 2px;
+    /* Ensures the padding doesn't push the border outside the defined width */
+    box-sizing: border-box;
+    /* Adds some breathing room inside the box */
+    padding: 10px;
+    /* Removes default browser outline when clicked */
+    outline: none;
+    width: 100%;
+    color: var(--morja-orange-dark);
+    font-size: 20px;
+    min-height: 183px;
+  }
+  .contanct-textarea::placeholder {
+    color: var(--morja-orange-dark);
+  }
+
+  .form-input {
+    border: 2px solid var(--morja-orange-dark); 
+    background-color: var(--morja-orange-dark);
+    border-radius: 4px;
+    /* Spacing and layout */
+    padding: 10px 15px;
+    width: 100%;   
+    height: 45px;
+    
+    /* Text styling */
+    font-size: 16px;
+    color: white !important;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    
+    /* Important for consistent box sizing */
+    box-sizing: border-box;
+  }
+  .form-input::placeholder {
+    color: white;
+  }
+  .submit-button {
+    width: 100%; 
+    height: 45px; 
+    color: white; 
+    font-size: 20px; 
+    font-weight: 20px;
+    font-weight: bold;
+  }
+  .option-btn {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+    min-height: 45px; 
+  }
