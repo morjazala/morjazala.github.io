@@ -224,3 +224,70 @@
     visibility: visible;
   }
 }
+
+/* Shop dropdown arrow */
+/* Osnovni overlay z naslovom */
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* Prepusti klike pod-elementom */
+}
+
+
+.card-main-title {
+  color: white !important;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+/* Dropdown overlay (začetno skrit) */
+.dropdown-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Temnejše ozadje za boljši kontrast */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 5; /* Povezave postavimo na vrh plasti */
+}
+
+/* Ob hoverju ali fokusu na mobilnih napravah */
+.has-dropdown:hover .dropdown-overlay,
+.has-dropdown:focus-within .dropdown-overlay {
+  opacity: 1;
+  visibility: visible;
+}
+
+.has-dropdown:hover .image-overlay {
+  opacity: 0;
+}
+
+/* Slogi za posamezne opcije v dropdownu */
+.dropdown-sublink {
+  color: #ffffff !important;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 6px 12px;
+  transition: transform 0.2s ease, text-decoration 0.2s ease;
+}
+/* Medium screens */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-main-title {
+    font-size: 24px;
+  }
+  .dropdown-sublink {
+    font-size: 12px;
+  }
+}
+
+.dropdown-sublink:hover {
+  text-decoration: underline !important;
+}
