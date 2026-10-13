@@ -1,19 +1,5 @@
 /* offer.html */
 
-.tape-item {
-    /* Path to your tape image */
-    background-image: url('/images/tape-bg.png'); 
-    background-size: contain;      /* Ensures the whole tape is visible */
-    background-repeat: no-repeat;  /* Prevents tiling inside the box */
-    background-position: center;   /* Keeps the text in the middle of the tape */
-    
-    /* Adjust these to match your image proportions */
-    padding: 10px 10px;           
-    min-height: 60px;              /* Ensures short words don't make the tape too tiny */
-    min-width: 200px;
-    display: inline-block;
-}
-
 .cikcak {
     background-image: url('/images/cikcak.webp'); 
     background-size: cover;
