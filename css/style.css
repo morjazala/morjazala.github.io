@@ -392,12 +392,12 @@ a.page-link {
 
   /* footer */
   .footer {
-    background-image: url('/images/footer-raztrganina.webp');
+    background-image: url('/images/footer.webp');
     /* Image to fill the height */
     background-size: auto 100%; 
     /* Allow the image to repeat horizontally */
     background-repeat: repeat-x;
-    background-position: center;
+    background-position: left;
     /* Ensure all text on the background */
     padding-top: 150px;
   }
