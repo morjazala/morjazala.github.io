@@ -1,0 +1,98 @@
+/* All overrides are scoped to this layout, including its shared header. */
+.wedding-section {
+  max-width: 964px;
+}
+.wedding-how-it-works.is-opening .wedding-how-content {
+  animation: wedding-fade-down 0.35s ease-out both;
+}
+@keyframes wedding-fade-down {
+  from { opacity: 0; transform: translateY(-12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .wedding-how-it-works.is-opening .wedding-how-content { animation: none; }
+}
+@media (min-width: 768px) {
+  .wedding-story-frame {
+    position: relative;
+  }
+  /* Keep the portrait frame as a minimum; let longer quotes stretch it. */
+  .wedding-story-frame::before {
+    content: "";
+    display: block;
+    padding-top: 125%;
+  }
+  .wedding-story-frame > .wedding-story-photos {
+    position: absolute;
+    inset: 0;
+  }
+  .wedding-story-frame > .wedding-story-photos > .splide__track {
+    height: 100%;
+  }
+  .wedding-intro-image img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.wedding-carousel {
+  padding: 0 36px;
+}
+/* Let the tallest story size the outer carousel, then fill that height in every slide. */
+.wedding-carousel > .splide__track > .splide__list {
+  height: auto;
+  align-items: stretch;
+}
+.wedding-slide {
+  display: flex;
+}
+.wedding-slide > .row {
+  flex: 1;
+}
+.wedding-slide blockquote {
+  margin: 0;
+  padding: 0;
+}
+.wedding-slide blockquote,
+.wedding-slide blockquote p,
+.wedding-slide figcaption {
+  font-size: 17px;
+}
+.wedding-story-photos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.wedding-carousel > .splide__arrows .splide__arrow--prev {
+  left: -8px;
+}
+.wedding-carousel > .splide__arrows .splide__arrow--next {
+  right: -8px;
+}
+.wedding-carousel .splide__arrow:focus-visible,
+.wedding-cta {
+  padding: 80px 90px 65px;
+  background: url("/images/lace-circle.png") center / 100% 100% no-repeat;
+  color: var(--morja-purple);
+  max-width: 760px;
+}
+.wedding-cta h2 {
+  color: var(--morja-purple);
+  font-size: 22px;
+  font-weight: 800;
+}
+.wedding-video h2 {
+  font-size: 19px;
+  font-weight: 700;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .wedding-carousel {
+    padding: 0 20px;
+  }
+  .wedding-cta {
+    padding: 90px 60px 50px 60px;
+  }
+}
